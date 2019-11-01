@@ -1,0 +1,55 @@
+@import url(https://fonts.googleapis.com/css?family=Poppins:400,500,600,700);
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html,
+body {
+    height: 100%;
+    font-family: "Poppins", sans-serif;
+    line-height: 1.8;
+    color: #212121;
+}
+
+}
+
+.container {
+    width: 100%;
+    height: 100%;
+}
+
+.main-container {
+    padding: 50px 50px;
+}
+
+a {
+    color: #6c6c6c;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+    text-decoration: none !important;
+}
+
+a:visited {
+    color: #6c6c6c;
+}
+
+a:hover {
+    color: #ffbf00;
+}
+
+.app {
+    margin: 2rem 0 0;
+}
+
+.app__status {
+    display: none;
+}
+
+.app.is-state-1 .app__status--1,
+.app.is-state-2 .app__status--2,
+.app.is-state-3 .app__status--3,
+.app.is-state-error .app__status--error {
+    display: block;
+}

@@ -1,0 +1,9 @@
+<?php
+DEFINE("MANAGERPASS","Ygoi7b6gm");
+DEFINE("BOTTOKEN","966206571:AAFxT39DhAAetg8nb-kje0Q60_q8DNoLO9s");
+DEFINE("DBTYPE","mysql");
+DEFINE("MYSQL_HOST","localhost");
+DEFINE("MYSQL_USER","u0834230_default");
+DEFINE("MYSQL_PASSWORD","Ctqa!h7H");
+DEFINE("MYSQL_DBNAME","u0834230_default");
+DEFINE("WEBHOOKSCRIPT","telegram-site-helper-get-webhook_5db21246b912c.php");

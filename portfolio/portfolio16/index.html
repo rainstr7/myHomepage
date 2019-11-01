@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html class="no-js" lang="">
+  <head>
+    <meta charset="utf-8" />
+    <meta https-equiv="x-ua-compatible" content="ie=edge" />
+    <title>litres.ru test</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <link rel="stylesheet" href="./styles/style.css" />
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="main-container">
+        <h1>Тестовое задание</h1>
+        <p>
+          Создайте страничку, которая будет брать URL из&nbsp;параметра XML,<br />
+          загружать с&nbsp;него XML и&nbsp;выдавать на&nbsp;странице следующую
+          информацию о&nbsp;нем:<br />
+          <i
+            >Пример URL:
+            https://localhost/litrestest.html<b>?XML=/test.xml</b>></i
+          ><br /><br />1. Число внутренних ссылок (теги &lt;a href="#id"&gt);<br />2.
+          Суммарное число букв внутри тегов, не&nbsp;включая;<br />
+          пробельные символы &lt;aaa dd="ddd"&gt;text&lt;aaa&gt;&nbsp;&mdash;
+          четыре буквы);<br />3. Суммарное число букв нормализованного текста
+          внутри тегов, включая и&nbsp;пробелы;<br />4. Число битых внутренних
+          ссылок (ссылки на&nbsp;несуществующие ID&nbsp;элементов);<br />
+        </p>
+        <div id="app" class="app is-state-1">
+          <div class="app__status app__status--1">
+            Подготовка...
+          </div>
+          <div class="app__status app__status--2">
+            Работаю с xml-документом...
+          </div>
+          <div class="app__status app__status--3">
+            <p>Я закончил:</p>
+            <ol>
+              <li>
+                Число внутренних ссылок: <span id="local-links-count"></span>
+              </li>
+              <li>
+                Суммарное число букв внутри тегов, не включая пробельные
+                символы:
+                <span id="total-letters-count"></span>
+              </li>
+              <li>
+                Суммарное число ВСЕХ букв внутри тегов:
+                <span id="all-letters-count"></span>
+              </li>
+              <li>
+                Число битых внутренних ссылок:
+                <span id="bad-links-count"></span>
+              </li>
+            </ol>
+            <p>XML-документ: <a href="" id="xml-url"></a></p>
+            <h3>
+              <a id="show" href="#" onclick="show('book')"
+                >Показать документ читабельном виде</a
+              >
+            </h3>
+            <div id="book" style="display:none"></div>
+          </div>
+          <div class="app__status app__status--error is-state-error">
+            Возникла ошибка: <span id="error"></span>.
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="scripts/myScript.js"></script>
+  </body>
+</html>
